@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>IWA Windowing Example</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./index.js" defer></script>
+  <!--To keep the manifest as it is instead of making it part of any bundles–->
+  <!-- webpackIgnore: true -->
+  <link rel="manifest" href="./.well-known/manifest.webmanifest">
+</head>
+<body>
+  <h3 class="header">IWA Windowing Example</h3>
+  <div><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/display-mode">Display Mode</a>:</strong>
+    <div class="displaymode-fullscreen">fullscreen</div>
+    <div class="displaymode-standalone">standalone</div>
+    <div class="displaymode-minimal-ui">minimal-ui</div>
+    <div class="displaymode-browser">browser</div>
+    <div class="displaymode-window-controls-overlay">window-controls-overlay</div>
+    <div class="displaymode-borderless">borderless</div>
+  </div>
+  <div><strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window_Management_API">Window Management</a>:</strong>
+    <div id="windowManagementStatus" class="permissionstatus"></div>
+    <button id="windowManagementPrompt">prompt</button>
+  </div>
+  <div><strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API">Fullscreen</a>:</strong>
+    <button id="requestFullscreenButton" class="htmlfullscreen-none">request</button>
+    <button id="exitFullscreenButton" class="htmlfullscreen-fullscreen">exit</button>
+  </div>
+  <div><strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/open#popup">Popups</a>:</strong>
+    <button id="openWindowButton">open</button>
+    <button id="openMultipleButton">one per screen</button>
+  </div>
+  <div><strong><a href="https://web.dev/articles/window-controls-overlay#determining_which_parts_of_the_title_bar_are_draggable">App Region</a>:</strong>
+    <div class="appregion-draggable">click and drag the window from here!</div>
+    <div class="appregion-other">not draggable</div>
+  </div>
+  <div><strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userActivation">User Activation</a>:</strong>
+    <div id="activationState">Not active</div>
+  </div>
+  <div><h3>Experimental <a href="https://chromestatus.com/feature/6218822004768768">Automatic Fullscreen</a> Features</h3>
+    <div><strong><a href="https://github.com/explainers-by-googlers/html-fullscreen-without-a-gesture">Fullscreen Without Gesture</a>:</strong>
+      <div id="fullscreenWithoutGestureStatus" class="permissionstatus"></div>
+    </div>
+      <div><strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API">Fullscreen</a>:</strong>
+      <button id="requestFullscreenOnMouseEnterButton" class="htmlfullscreen-none">request on hover</button>
+      <button id="requestFullscreen6sAfterClickButton" class="htmlfullscreen-none">request after 6s</button>
+      <button id="exitFullscreenOnMouseEnterButton" class="htmlfullscreen-fullscreen">exit</button>
+    </div>
+    <div><strong>Fullscreen Popups:</strong> (popup requests):
+      <button id="openFullscreenPopupOnloadButton">open</button>
+      <button id="openMultipleFullscreenPopupOnloadButton">one per screen</button>
+    </div>
+    <div><strong>Fullscreen Popups:</strong> (opener requests):
+      <button id="openFullscreenOpenerOnloadButton">open</button>
+      <button id="openMultipleFullscreenOpenerOnloadButton">one per screen</button>
+    </div>
+  </div>
+  <div><h3>Log</h3>
+    <div id="log" class="log"></div>
+  </div>
+  <div>(Source and hosting on <a href="https://github.com/michaelwasserman/iwa-windowing-example/">GitHub)</a>
+</body>
+</html>

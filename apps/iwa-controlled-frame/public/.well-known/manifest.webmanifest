@@ -1,0 +1,23 @@
+{
+  "name": "IWA Controlled Frame Test",
+  "short_name": "IWACFTest",
+  "description": "Isolated Web App to test the Controlled Frame API.",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "fullscreen",
+  "theme_color": "white",
+  "background_color": "white",
+  "version": "1.0.3",
+  "permissions_policy": {
+    "controlled-frame": ["self"],
+    "cross-origin-isolated": ["self"],
+    "fullscreen": ["*"],
+    "allow-fullscreen": ["*"]
+  }
+}
