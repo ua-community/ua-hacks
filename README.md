@@ -1,3 +1,9 @@
+# ua-hacks
+
+Research prototypes focused on our active research areas, including web platform transitions, end-user programming, and on-device AI & cognitive architectures. For more details visit our [research](https://www.userandagents.com/research) page.
+
+---
+
 # `Turborepo` Vite starter
 
 This is an official starter Turborepo.
