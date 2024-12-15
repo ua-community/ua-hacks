@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "short_name": "IWA KS",
+  "name": "Kitchen Sink IWA",
+  "version": "0.0.0",
+  "update_manifest_url": "https://github.com/chromeos/iwa-sink/releases/latest/download/update.json",
+  "icons": [
+    {
+      "src": "/images/icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "display_override": ["borderless"],
+  "scope": "/",
+  "isolated_storage": true,
+  "permissions_policy": {
+    "cross-origin-isolated": ["self"],
+    "direct-sockets": ["self"],
+    "controlledframe": ["self"],
+    "window-management": ["self"],
+    "all-screens-capture": ["self"]
+  }
+}

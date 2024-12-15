@@ -1,0 +1,68 @@
+<!--
+ Copyright 2024 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<script
+  type="module"
+  src="/src/components/scripts/socket-connection.ts"
+></script>
+<template id="socket-connection">
+  <div class="container">
+    <p id="connection">Let's make a socket connection!</p>
+
+    <!-- TODO: Update the web component to account for this being in a form -->
+    <form id="form">
+      <label for="messageInput">Send a message</label>
+      <input type="text" id="messageInput" name="messageInput" />
+
+      <button id="sendButton">Send</button>
+    </form>
+
+    <div class="container">
+      <socket-log id="log"></socket-log>
+    </div>
+
+    <button id="disconnectButton">Disconnect</button>
+  </div>
+
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    button {
+      width: min-content;
+      margin-top: 1rem;
+    }
+
+    #incoming-header {
+      font-size: 0.8rem;
+      margin: 0;
+      line-height: 1;
+      padding: 0;
+    }
+
+    #disconnectButton {
+      align-self: flex-end;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+  </style>
+</template>

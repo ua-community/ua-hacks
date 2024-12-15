@@ -1,0 +1,3 @@
+[ ] create add icons for use with different iwa examples (various colors)
+[ ] add certs to ./certs folder encrypted_key.pem see: https://chromeos.dev/en/tutorials/getting-started-with-isolated-web-apps/2
+[ ] add .env.example and .env.local file   
