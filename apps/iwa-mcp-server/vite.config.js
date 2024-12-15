@@ -41,12 +41,13 @@ if (process.env.NODE_ENV === 'production') {
 }
 export default defineConfig({
   plugins,
+  port: 4322,
   server: {
-    port: 4321,
+    port: 4322,
     hmr: {
       protocol: 'ws',
       host: 'localhost',
-      clientPort: 4321,
+      clientPort: 4322,
     }
   },
   build: {
