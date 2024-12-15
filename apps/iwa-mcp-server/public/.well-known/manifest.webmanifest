@@ -2,7 +2,7 @@
   "id": "/",
   "short_name": "iwa-mcp-server",
   "name": "iwa-mcp-server",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icons": [
     {
       "src": "/images/icons-vector.svg",
